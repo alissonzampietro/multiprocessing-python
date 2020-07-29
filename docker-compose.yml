@@ -1,0 +1,9 @@
+version: '3.8'
+services: 
+    python:
+        command: 
+            - mkdir /app/
+        volumes: 
+            - ./:/app/
+        image: python
+        entrypoint: ["python","/app/main.py"]
